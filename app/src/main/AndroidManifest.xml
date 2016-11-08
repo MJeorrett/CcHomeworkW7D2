@@ -8,11 +8,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main_activity_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CountDisplayActivity"
+            android:label="@string/count_display_activity_name"
+            android:parentActivityName=".MainActivity">
         </activity>
 
     </application>

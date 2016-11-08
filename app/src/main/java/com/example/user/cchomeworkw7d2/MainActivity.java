@@ -33,7 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         String theText = mTheTextInput.getText().toString();
-        int wordCount = WordCounter.countWords( theText );
-        Log.d( "MainActivity", "submit_button clicked");
+        String countText = String.valueOf( WordCounter.countWords( theText ) );
+
+        Intent intent = new Intent( this, CountDisplayActivity.class );
+        intent.putExtra( "count_text", countText );
+
+        startActivity( intent );
     }
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CcHomeworkW7D2</string>
+    <string name="main_activity_name">Word Counter</string>
+    <string name="count_display_activity_name">Word Count</string>
 </resources>

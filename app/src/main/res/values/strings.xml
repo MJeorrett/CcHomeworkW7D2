@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">CcHomeworkW7D2</string>
     <string name="main_activity_name">Word Counter</string>
-    <string name="simple_count_activity_label">Word Count</string>
+    <string name="simple_count_activity_label">Simple Word Count</string>
+    <string name="advanced_count_activity_label">Advanced Word Count</string>
 </resources>

@@ -15,7 +15,8 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText mTheTextInput;
-    private Button mSubmitButtonInput;
+    private Button mSimpleSubmitButtonInput;
+    private Button mAdvancedSubmitButtonInput;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -24,17 +25,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         mTheTextInput = (EditText) findViewById(R.id.the_text);
-        mSubmitButtonInput = (Button) findViewById(R.id.submit_button);
-        mSubmitButtonInput.setOnClickListener( this );
+
+        mSimpleSubmitButtonInput = (Button) findViewById(R.id.simple_submit_button);
+        mSimpleSubmitButtonInput.setOnClickListener( this );
+
+        mAdvancedSubmitButtonInput = (Button) findViewById(R.id.advanced_submit_button);
+        mAdvancedSubmitButtonInput.setOnClickListener( this );
     }
 
     @Override
     public void onClick(View view) {
+
         String theText = mTheTextInput.getText().toString();
+        Intent intent;
 
-        Intent intent = new Intent( this, SimpleCountActivity.class );
-        intent.putExtra( "the_text", theText );
+        if ( view.getId() == R.id.simple_submit_button ) {
 
-        startActivity( intent );
+            intent = new Intent(this, SimpleCountActivity.class);
+
+        } else {
+
+            intent = new Intent(this, AdvancedCountActivity.class);
+
+        }
+
+        intent.putExtra("the_text", theText);
+        startActivity(intent);
     }
 }

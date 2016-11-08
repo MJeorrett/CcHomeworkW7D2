@@ -23,6 +23,12 @@
             android:parentActivityName=".MainActivity">
         </activity>
 
+        <activity
+            android:name=".AdvancedCountActivity"
+            android:label="@string/simple_count_activity_label"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
     </application>
 
 </manifest>

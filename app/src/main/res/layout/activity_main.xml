@@ -12,8 +12,15 @@
         style="@style/myViews"/>
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/simple_submit_button"
         android:text="Simple Count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/myViews"/>
+
+    <Button
+        android:id="@+id/advanced_submit_button"
+        android:text="Advanced Count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/myViews"/>

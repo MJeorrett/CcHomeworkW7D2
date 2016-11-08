@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         mTheTextInput = (EditText) findViewById(R.id.the_text);
         mSubmitButtonInput = (Button) findViewById(R.id.submit_button);
-
         mSubmitButtonInput.setOnClickListener( this );
     }
 

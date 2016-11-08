@@ -8,7 +8,7 @@ public class WordCounter {
 
     public static int simpleCountWords(String text) {
 
-        if (text == "") {
+        if ( text.isEmpty() ) {
             return 0;
         }
 

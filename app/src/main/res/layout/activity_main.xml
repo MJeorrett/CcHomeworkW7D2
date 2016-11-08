@@ -6,6 +6,7 @@
     <EditText
         android:id="@+id/the_text"
         android:hint="Enter text to count words in"
+        android:text=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         style="@style/myViews"/>

@@ -6,7 +6,7 @@ package com.example.user.cchomeworkw7d2;
 
 public class WordCounter {
 
-    public static int countWords(String text) {
+    public static int simpleCountWords(String text) {
 
         if (text == "") {
             return 0;

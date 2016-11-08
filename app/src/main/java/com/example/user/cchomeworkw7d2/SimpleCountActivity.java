@@ -20,7 +20,7 @@ public class SimpleCountActivity extends AppCompatActivity {
 
         mCountDisplayView = (TextView) findViewById( R.id.count_display );
         String theText = getIntent().getStringExtra( "the_text" );
-        String countText = String.valueOf( WordCounter.countWords( theText ) );
+        String countText = String.valueOf( WordCounter.simpleCountWords( theText ) );
 
         mCountDisplayView.setText( countText );
     }

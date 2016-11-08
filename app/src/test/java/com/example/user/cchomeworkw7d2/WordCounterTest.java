@@ -12,16 +12,16 @@ public class WordCounterTest {
 
     @Test
     public void emptyString() {
-        assertEquals( 0, WordCounter.countWords( "" ) );
+        assertEquals( 0, WordCounter.simpleCountWords( "" ) );
     }
 
     @Test
     public void oneWord() {
-        assertEquals( 1, WordCounter.countWords( "one" ) );
+        assertEquals( 1, WordCounter.simpleCountWords( "one" ) );
     }
 
     @Test
     public void multipleWords() {
-        assertEquals( 4, WordCounter.countWords( "There are multiple words" ) );
+        assertEquals( 4, WordCounter.simpleCountWords( "There are multiple words" ) );
     }
 }

@@ -6,15 +6,15 @@
     <EditText
         android:id="@+id/the_text"
         android:hint="Enter text to count words in"
-        android:layout_margin="25dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        style="@style/myViews"/>
 
     <Button
         android:id="@+id/submit_button"
-        android:text="Submit"
-        android:layout_margin="25px"
+        android:text="Simple Count"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        style="@style/myViews"/>
 
 </LinearLayout>

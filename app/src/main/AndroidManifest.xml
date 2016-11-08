@@ -18,8 +18,8 @@
         </activity>
 
         <activity
-            android:name=".CountDisplayActivity"
-            android:label="@string/count_display_activity_name"
+            android:name=".SimpleCountActivity"
+            android:label="@string/simple_count_activity_label"
             android:parentActivityName=".MainActivity">
         </activity>
 

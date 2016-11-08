@@ -9,17 +9,19 @@ import android.widget.TextView;
  * Created by user on 08/11/2016.
  */
 
-public class CountDisplayActivity extends AppCompatActivity {
+public class SimpleCountActivity extends AppCompatActivity {
 
     private TextView mCountDisplayView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_count_display );
+        setContentView( R.layout.activity_simple_count);
 
         mCountDisplayView = (TextView) findViewById( R.id.count_display );
-        String countText = getIntent().getStringExtra( "count_text" );
+        String theText = getIntent().getStringExtra( "the_text" );
+        String countText = String.valueOf( WordCounter.countWords( theText ) );
+
         mCountDisplayView.setText( countText );
     }
 }
